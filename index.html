@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -29,16 +31,48 @@
                 <p id="remcard">Remove Card</p>
             </div>
         </div>
-        <h5 id="adduser">Add User Details</h5>
+        <h5 id="adduser">Add card Details</h5>
         <input type="text" name="" id="username" placeholder="Name on Card">
         <div class="carddetails disflex">
             <input type="text" id="cardno" placeholder="Card Number">
             <input type="text" id="exp" placeholder="exp date">
             <input type="text" id="Cvv" placeholder="Cvv">
         </div>
-        <button>Save Details</button>
-        </form>
+    </form>
+    <div class="white">
+    <button id="btnshow">Save Details</button>
+</div>
     </section>
+    <section class="userdetails" id="userdetails">
+        <form action="">
+            <i class="fa fa-times" aria-hidden="true" id="cross"></i>
+            <h3>Reciever's Details</h3>
+            <input type="text" placeholder="Full name of Sender" id="sendername" name="sendername">
+            <input type="text" placeholder="Account Details" id="senderaccount" name="senderaccount">
+            <input type="text" placeholder="Bank Ifsc Code" id="ifsc" name="ifsc">
+            <input type="text" placeholder="Total amount" id="totalamount" name="totalamount">
+            <button>Submit</button>
+
+        </form>
+
+    </section>
+<script>
+    $( document ).ready(function() {
+        $("#btnshow").click(function(){
+            $("#userdetails").toggleClass("dis");
+            $(".form1").toggleClass("opa30");
+});
+$("#cross").click(function(){
+            $("#userdetails").toggleClass("dis");
+            $(".form1").toggleClass("opa30");
+});
+    });
+
     
+</script>    
+
+
+
 </body>
+
 </html>
