@@ -40,16 +40,12 @@ form {
     margin-bottom: 2rem;
     cursor: pointer;
 }
-
-.head h5:nth-child(2):after {
-    content: "";
-    display: block;
-    width: 71px;
-    height: 1.5px;
-    background: #000;
-    right: 15%;
-    position: relative;
+.head h5 a{
+    text-decoration: none;
+    color: black;
 }
+
+
 
 /* -------saved Cards code--------- */
 form h5:nth-child(3) {
@@ -179,9 +175,39 @@ button:hover {
 
 .userdetails form h3{
     padding-bottom: 1rem;
-    
-    
+        
 }
+
+.paymentoption{
+    display: flex;
+}
+.paymentoption h4{
+    padding: 0rem 0.5rem;
+    margin-bottom: 0.4rem;
+}
+.paymentoption h5{
+cursor: pointer;
+}
+
+.paymentoption h5:nth-child(1)::after{
+    content: "";
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 3rem;
+    height: 0.2rem;
+    transition: 0.3s ease-in;
+}
+/* .paymentoption h5:nth-child(1)::after{
+    width: 2rem !important;
+    left: 4rem !important;
+} */
+
+.paytoggle{
+    width: 2rem !important;
+    left: 4rem !important;
+}
+
 .userdetails form{
     display: flex;
     align-items: center;
@@ -194,6 +220,7 @@ button:hover {
     margin: 0.4rem 0rem;
     padding: 0.2rem 1rem;
 }
+
 
 /* -----icon code------- */
 #cross{
